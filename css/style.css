@@ -1,0 +1,803 @@
+/*==========Fonts==========*/
+
+@font-face {
+    font-family: 'Orkney Light';
+    src: url("../fonts/orkney-light.woff2") format("woff2"), url("../fonts/orkney-light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orkney Regular';
+    src: url("../fonts/orkney-regular.woff2") format("woff2"), url("../fonts/orkney-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orkney Bold';
+    src: url("../fonts/orkney-bold.woff2") format("woff2"), url("../fonts/orkney-bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Regular';
+    src: url("../fonts/axiforma_regular.woff2") format("woff2"), url("../fonts/axiforma_regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Medium';
+    src: url("../fonts/axiforma_medium.woff2") format("woff2"), url("../fonts/axiforma_medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma SemiBold';
+    src: url("../fonts/axiforma_semibold.woff2") format("woff2"), url("../fonts/axiforma_semibold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*==========Universal Styling==========*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Axiforma Medium";
+    color: #302e2e;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body,
+div {
+    font-family: "Axiforma Regular";
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #212121;
+    font-size: 12px;
+    line-height: 18px;
+    color: #212121;
+}
+
+p {
+    font-family: "Axiforma Regular";
+    font-size: 12px;
+    line-height: 18px;
+    color: #212121;
+}
+
+a {
+    color: #181818;
+    font-family: "Axiforma Medium";
+}
+
+.main-title {
+    font-family: "Orkney Bold";
+    font-size: 46px;
+    line-height: 1em;
+    letter-spacing: 0.01em;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    font-family: "Axiforma Medium";
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    background: #64ab47;
+    border-radius: 35px;
+    padding: 16px 26px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.main-btn:after {
+    content: url(../images/arrow.png);
+    margin-left: 15px;
+}
+
+.main-btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+body a:focus,
+body a:active,
+body a:hover,
+body .btn:focus,
+body .btn:active,
+body .btn:hover,
+body .form-control:focus,
+body .form-control:active,
+body .form-control:hover {
+    -moz-outline: none;
+    outline: none;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+.list-none{
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+/*==========Header style==========*/
+
+.header {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.header .navbar {
+    padding: 4px 0;
+}
+
+.header .navbar .nav-link {
+    font-family: 'Axiforma Medium';
+    padding: 16px 26px;
+    line-height: 1em;
+    font-size: 16px;
+    color: #181818;
+    letter-spacing: 0.025em;
+}
+
+.header .navbar .nav-link.active {
+    color: #64ab47;
+}
+.header .navbar .nav-link:hover {
+    color: #64ab47;
+}
+
+.header .navbar .nav-link.menu-btn {
+    background-color: #1161a5;
+    border-radius: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header .navbar .nav-link.menu-btn:after {
+    content: url(../images/arrow.png);
+    margin-left: 15px;
+}
+
+.header .navbar .nav-link.menu-btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/*==========Hero Section style==========*/
+
+.hero-section {
+    padding: 30px 0 165px;
+}
+.hero-section:before{
+    content: "";
+    background-image: url(../images/hero-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 65%;
+    height: -webkit-fill-available;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero-section .hero-content {
+    width: 85%;
+}
+
+.hero-section .hero-content p {
+    margin-bottom: 25px;
+}
+
+.hero-section .hero-img img {
+    width: 100%;
+}
+
+/*==========Rings Background style==========*/
+
+.rings-section{
+    position: relative;
+    overflow: hidden;
+}
+.rings-section:before {
+    content: url(../images/left-bubble.png);
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+.rings-section:after {
+    content: url(../images/ring-thick.png);
+    position: absolute;
+    top: 20%;
+    right: -7%;
+    z-index: -1;    
+}
+.rings-2.rings-section:before {
+    right: 0;
+    transform: rotate(180deg);  
+}
+
+.rings-2.rings-section:after {
+    left: -7%;
+}
+
+/*==========Creation Section style==========*/
+
+.creation-section {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 30px 0 80px;
+    background-image: url(../images/ring-thin.png);
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
+}
+.creation-section .creation-content {
+    width: 95%;
+}
+.creation-section .creation-img {
+    padding-top: 40px;
+}
+.creation-section .creation-img img {
+    width: 100%;
+}
+/*==========Support Section style==========*/
+.support-section {
+    padding: 30px 0;
+    background-image: url(../images/dots.png);
+    background-position: 100% 25%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.support-section .support-img {
+    padding-top: 48px;
+    z-index: 99999;
+    position: relative;
+}
+.support-section .support-img img {
+    width: 100%;
+}
+.support-section .support-img:before {
+    content: url(../images/right-curve.png);
+    position: absolute;
+    display: inline-block;
+    z-index: -9;
+    top: 0;
+    right: 70px;
+}
+.support-section .support-content {
+    width: 85%;
+    margin-left: auto;
+}
+/*==========Limits Section style==========*/
+.limits-section {
+    padding: 30px 0;
+    background-image: url(../images/dots.png);
+    background-position: 0% 75%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.limits-section .limits-content {
+    width: 85%;
+}
+.limits-section .limits-img {
+    padding-top: 48px;
+    z-index: 99999;
+    position: relative;
+}
+.limits-section .limits-img img {
+    width: 100%;
+}
+.limits-section .limits-img:before {
+    content: url(../images/left-curve.png);
+    position: absolute;
+    display: inline-block;
+    z-index: -9;
+    top: 0;
+    left: 70px;
+}
+/*==========Pricing style==========*/
+.pricing-section {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.pricing-section .pricing-content{
+text-align: center;
+}
+.pricing-table{
+    margin-top: 6%;
+}
+.pricing-table .single-pricing-table-wrape{
+    width: 50%;
+}
+.pricing-table .single-pricing-table-wrape .list-features{
+    width: 50%;
+}
+.pricing-table .single-pricing-table-wrape .single-pricing-table{
+    width: 50%;
+    
+}
+.pricing-table .single-pricing-table{
+    width: 25%;
+}
+.pricing-table .list-features-title-wrapper{
+    min-height: 136px;
+    display: flex;
+}
+.pricing-table .list-features-title{
+    color: #302e2e;
+    font-family: "Orkney Regular";
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    align-self: flex-end;
+}
+.pricing-table .list-features ul {
+    background: #1161a5;
+    color: #fff;
+}
+.pricing-table .list-features ul li {
+    font-family: "Orkney Regular";
+    padding: 0.65rem 1rem;
+    font-size: 0.75rem;
+    min-height: 40px;
+}
+.pricing-table .list-features ul li+li {
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.pricing-table .single-pricing-table-inner {
+    box-shadow: 0 0 7px rgba(0,0,0,0.15);
+    background: #fff;
+    transition: 0.3s all ease;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-head{
+    padding: 2rem;
+    min-height: 135px;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-head .table-title{
+    color: #302e2e;
+    font-family: "Orkney Regular";
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-head .table-text{
+    color: #5d5e5e;
+    font-family: "Orkney Regular";
+    font-size: 0.7rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding-bottom: 12px;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-head .table-price{
+    color: #1161a5;
+    font-family: "Orkney Bold";
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-body .list-text{
+    color: #5d5e5e;
+    font-family: "Orkney Regular";
+    font-size: 0.7rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-footer{
+    padding: 1.5rem;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-footer .pricing-table-button {
+    color: #1161a5;
+    font-family: "Orkney Bold";
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding-bottom: .5rem;
+    border-bottom: .17rem solid #1160a4;
+    display: inline-block;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-footer .pricing-table-button:hover {
+    color: #64ab47;
+    border-bottom: .17rem solid #64ab47;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-body ul {
+    position: relative;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-body ul:after {
+    content: "";
+    border-right: 35px solid #1161a5;
+    position: absolute;
+    height: 100%;
+    left: -35px;
+    top: 0;
+    z-index: -1;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-body li {
+    padding: 0.7rem 1rem;
+    min-height: 40px;
+}
+.pricing-table .single-pricing-table-inner .pricing-table-body li+li {
+    border-top: 1px solid #eee;
+}
+@media (min-width: 768px){
+    .md-flex {
+        display: flex;
+    }
+    }
+
+/*==========Features style==========*/
+
+.features{
+    padding: 5% 0;
+}
+.features .features-block {
+    padding-top: 3.5%;
+    padding-bottom: 2.3%;
+}
+.features .features-block-content {
+    width: 92%;
+}
+.features .features-block-img img {
+    width: 100%;
+}
+.features .product-seo-content {
+    margin-left: auto;
+}
+.features .support-section {
+    padding: 3% 0 0;
+    background-position: 100% 80%;
+}
+.features-list .single-features-box{
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0.1);
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.features-list .single-features-box:hover{
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0.04);
+}
+.features-list .single-features-box .single-features-img{
+    padding-bottom: 20px;
+}
+.features-list .single-features-box .single-features-text{
+    color: #302e2e;
+    font-family: "Orkney Regular";
+    font-size: 0.8rem;
+}
+
+/*==========Footer style==========*/
+.footer {
+    margin-top: 65px;
+    background-color: #dfebf6;
+    
+}
+
+/*==========cta Section style==========*/
+
+.footer .cta-section {
+    text-align: center;
+    background-image: linear-gradient(169deg,#fff 50%, #dfebf6 0%);
+}
+.footer .cta-section .cta-inner {
+    position: relative;
+}
+.footer .cta-section .row {
+    width: 78%;
+    margin: 0 auto;
+    padding: 70px;
+    box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 0.1);
+    border-radius: 22px;
+    background-color: #ffffff;
+    z-index: 999;
+    position: relative;
+}
+.footer .cta-section .cta-inner .dots {
+    position: absolute;
+    top: -25px;
+    right: 0;
+}
+.footer .cta-section .cta-inner .cart-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.footer .cta-section h2 {
+    margin-bottom: 30px;
+}
+.footer .cta-section p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.footer .cta-section .main-btn {
+    font-family: "Axiforma SemiBold";
+    font-size: 15px;
+    padding: 18px 53px;
+    margin-bottom: 30px;
+    line-height: 1em;
+    color: #ffffff;
+}
+.footer .cta-section a {
+    font-family: "Orkney Bold";
+    font-size: 14px;
+    line-height: 25px;
+    color: #1161a5;
+    letter-spacing: 0.025em;
+}
+/*==========Footer main style==========*/
+.footer-main{ 
+padding-top: 30px;
+padding-bottom: 50px;
+}
+.footer-main .widget h5{
+    font-family: "Orkney Bold";
+    font-size: 14px;
+    line-height: 25px;
+    color: #1161a5;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.footer-main .widget .navbar-nav{
+    padding-top: 8px;
+}
+.footer-main .widget .navbar-nav a{
+    font-family: "Orkney Regular";
+    font-size: 12px;
+    line-height: 20px;
+    color: #181818;
+    padding:5px 0 ;
+}
+.footer-main .widget .navbar-nav a:hover{
+    color: #64ab47;
+}
+.footer-main .widget .footer-logo{
+    text-align: center;
+}
+.social-icon{
+    text-align: center;
+    padding-top: 15px;
+}
+.social-icon i {
+    font-size: 22px;
+    padding: 15px;
+    color: #181818;
+}
+.social-icon i:hover{
+    color: #64ab47;
+}
+/*==========Footer bottom style==========*/
+.footer-bottom{
+    border-top: 1px solid #d0d0d0;
+    padding: 20px 0 ;
+}
+.footer-bottom p, .footer-bottom a{
+    font-family: "Orkney Light";
+    font-size: 10px;
+    line-height: 18px;
+   margin-bottom: 0;
+   color: #4a4a4a;
+}
+.bottom-menu{
+    text-align: right;
+}
+/*==========Responsive style==========*/
+@media only screen and (min-width: 1200px) {
+    /*this style apply only if device is upper then 1200px*/
+    .lg-hidden {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    /*this style apply only if device is lower then 1200px*/
+    .main-title {
+        font-size: calc(100% + 1.5vw + 1.5vh);
+    }
+    .hero-section {
+        padding: 30px 0 85px;
+    }
+    .creation-section {
+        background-size: 12%;
+    }
+    .rings-section:after {
+        content: "";
+        background-image: url(../images/ring-thick.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 25%;
+        top: 50%;
+        height: -webkit-fill-available;
+    }
+    .rings-section:before {
+        content: "";
+        background-image: url(../images/left-bubble.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 8%;
+        height: -webkit-fill-available;
+    }
+    .features .rings-section:after {
+        top: 43%;
+    }
+    .features .rings-2.rings-section:before {
+        height: 110px;
+    }
+    .support-section {
+        background-size: 12%;
+    }
+    .support-section .support-img:before {
+        content: "";
+        background-image: url(../images/right-curve.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: -webkit-fill-available;
+    }
+    .limits-section {
+        background-size: 12%;
+    }
+    .limits-section .limits-img:before {
+        content: "";
+        background-image: url(../images/left-curve.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: -webkit-fill-available;
+    }
+    .footer .cta-section .cta-inner .dots {
+        right: 35px;
+        width: 12%;
+    }
+    .footer .cta-section .cta-inner .cart-icon {
+        left: 15px;
+        width: 12%;
+    }
+    .pricing-table .single-pricing-table-wrape .list-features {
+        display: none;
+    }
+    .pricing-table .single-pricing-table {
+        width: 33.3%;
+    }
+    .pricing-table .single-pricing-table-wrape {
+        width: 33.4%;
+    }
+    .pricing-table .single-pricing-table-wrape .single-pricing-table{
+        width: 100%;
+    }
+    .pricing-table .single-pricing-table-inner{
+        width:100%;
+    }
+    .pricing-table .single-pricing-table-inner .pricing-table-body .features-title{
+        font-family: "Orkney Bold";
+        padding-bottom: 1rem;
+        font-size: 0.75rem;
+        color: #1161a5;
+    }
+    .pricing-table .single-pricing-table-inner .pricing-table-body ul:after{
+        display: none;
+    }
+    .pricing-table .single-pricing-table-inner .pricing-table-body li{
+        min-height: 70px;
+    }
+    .pricing-table .single-pricing-table-inner .pricing-table-head {
+        background: #dfebf6;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .hero-section {
+        padding: 30px 0 70px;
+    }
+    .navbar-collapse {
+        padding: 20px;
+        box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 0.1);
+    }
+    .footer .cta-section .row {
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-section .row, .creation-section .row, .limits-section .row, .footer-main .row, .web-store .row, .store-inventory .row{
+        flex-flow: column-reverse;
+    }
+    .hero-section {
+        padding: 30px 0 30px;
+    }
+    
+    .hero-section:before {
+        width: 100%;
+    }    
+    .hero-section .hero-content {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .creation-section {
+     padding: 0;
+    }
+    .creation-section .creation-img {
+        padding-top: 0;
+    }
+    .creation-section .creation-content {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .support-section .support-content {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .limits-section .limits-content {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .footer {
+        margin-top: 0px;
+    }
+    .footer .cta-section .row {
+        width: 85%;
+    }
+    .footer .cta-section .cta-inner .dots {
+        right: 0;
+        width: 12%;
+    }
+    .footer .cta-section .cta-inner .cart-icon {
+        left: 0;
+        width: 12%;
+    }
+    .pricing-table {
+        margin-top: 2rem;
+    }
+    .pricing-table .single-pricing-table-wrape {
+        width: 100%;
+    }
+    .pricing-table .single-pricing-table {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .features  .features-block-content {
+        width: 100%;
+        padding-top: 25px;
+    }
+    
+}
+@media only screen and (max-width: 575px) {
+    .creation-section:after {
+        top: 33%;
+    }
+    .footer .cta-section .row {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .footer-main {
+        padding-bottom: 30px;
+    }
+    .copyright, .bottom-menu{
+        text-align: center;
+    }
+}
